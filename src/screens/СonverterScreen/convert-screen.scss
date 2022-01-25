@@ -1,0 +1,18 @@
+.convert__screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    text-align: center;
+
+    &__text {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+.equals {
+    font-weight: bold;
+    font-size: 2rem;
+}

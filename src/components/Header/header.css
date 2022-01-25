@@ -1,0 +1,18 @@
+.brand-link {
+    color: white;
+    text-decoration: none;
+}
+
+.brand-link:hover {
+    color: white;
+}
+
+.nav-link-page {
+    color: #8D92A0;
+    text-decoration: none;
+}
+
+.nav-link-page:hover {
+    color: #8D92A0;
+    opacity: 0.7;
+}
