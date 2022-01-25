@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Table, Row, Col, Form } from "react-bootstrap";
+import ModalWindow from "../ModalWindow/ModalWindow";
 
 import {currencyCurrentExchanger} from "../../actions/currencyAction";
+
+import './currency-table.css'
 
 export default function CurrencyTable(props) {
 
@@ -32,7 +35,12 @@ export default function CurrencyTable(props) {
                         <Form.Label>
                             <b>Your current currency</b>
                         </Form.Label>
-                        <Form.Select size="md" className="text-center" onChange={changeCurrentCurrencyHandler} value={currentExchanger}>
+                        <Form.Select
+                            size="md"
+                            className="current-selector"
+                            onChange={changeCurrentCurrencyHandler}
+                            value={currentExchanger}
+                        >
                             {currencyOptions.map((option => (
                                 <option key={option}>{option[0]}</option>
                             )))}
@@ -65,6 +73,7 @@ export default function CurrencyTable(props) {
                             </tbody>
                         )))}
                     </Table>
+                    <ModalWindow currencyOptions={currencyOptions} currentExchanger={currentExchanger}/>
                 </Col>
             </Row>
         </div>

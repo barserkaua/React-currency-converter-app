@@ -1,5 +1,4 @@
 import React from 'react';
-import {Form, Row} from "react-bootstrap";
 import './currency-row.css';
 
 export default function CurrencyRow(props) {
