@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# React currency converter
+
+![npm](https://img.shields.io/npm/v/npm?color=orange&logo=npm&logoColor=npm&style=flat-square)![react](https://img.shields.io/npm/v/react?color=blue&label=react&logo=react&logoColor=react&style=flat-square)![react-redux](https://img.shields.io/npm/v/react-redux?color=green&label=react-redux&logo=react-redux&logoColor=react-redux&style=flat-square)![axios](https://img.shields.io/npm/v/axios?color=red&label=axios&logo=axios&logoColor=axios&style=flat-square)![react-bootstrap](https://img.shields.io/npm/v/react-bootstrap?color=pink&label=react-bootstrap&logo=react-bootstrap&logoColor=react-bootstrap&style=flat-square)![react-router](https://img.shields.io/npm/v/react-router?color=pin&label=react-router&logo=react-router&logoColor=react-router&style=flat-square)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+To install all packages that we use on this project, run this command:
+
+### `npm install`
 
 ## Available Scripts
 

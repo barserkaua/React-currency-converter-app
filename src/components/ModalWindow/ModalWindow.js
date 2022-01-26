@@ -13,8 +13,11 @@ export default function ModalWindow(props) {
 
     const dispatch = useDispatch();
 
+
+
     function closeModalWindow() {
         const modal = document.querySelector('.modal');
+
         modal.classList.add('hide');
         modal.classList.remove('show');
     }
