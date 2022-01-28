@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import { Table, Row, Col, Form, ListGroup } from "react-bootstrap";
 import './currency-row.css';
 
 export default function CurrencyRow(props) {
@@ -8,18 +9,28 @@ export default function CurrencyRow(props) {
       selectedCurrency,
       onChangeCurrency,
       onChangeAmount,
+      switchCurrency,
       amount
   } = props;
 
   return (
       <div>
+          <div>
+              <ListGroup horizontal>
+                  <Form.Control
+                      type="number"
+                      value={amount} onChange={onChangeAmount}
+                      className="bootstrap-input"
+                  />
 
-          <input type="number" className="input" value={amount} onChange={onChangeAmount} />
-          <select value={selectedCurrency} onChange={onChangeCurrency}>
-              {currencyOptions.map(option => (
-                  <option key={option} value={option}>{option}</option>
-              ))}
-          </select>
+                  <Form.Select value={selectedCurrency} onChange={onChangeCurrency}>
+                      {currencyOptions.map(option => (
+                          <option key={option} value={option}>{option}</option>
+                      ))}
+                  </Form.Select>
+              </ListGroup>
+          </div>
       </div>
+
   );
 }

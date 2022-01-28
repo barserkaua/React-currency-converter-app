@@ -66,10 +66,15 @@ export default function ConverterScreen() {
         setAmountInFromCurrency(false)
     }
 
+    function handleSwitchCurrency() {
+        setFromCurrency(toCurrency)
+        setToCurrency(fromCurrency)
+    }
+
     return (
         <div className='convert__screen '>
             <Suspense fallback={<div>Download...</div>}>
-                <h2 className='convert__screen__text'>Convert</h2>
+                <h2 className='convert__screen__text'>Convert currency</h2>
                 <CurrencyRow
                     currencyOptions={currencyOptions}
                     selectedCurrency={fromCurrency}
@@ -77,7 +82,7 @@ export default function ConverterScreen() {
                     onChangeAmount={handleFromAmountChange}
                     amount={fromAmount}
                 />
-                <span className='equals'>=</span>
+                <span className='switch' onClick={handleSwitchCurrency}><i className="fas fa-exchange-alt"/></span>
                 <CurrencyRow
                     currencyOptions={currencyOptions}
                     selectedCurrency={toCurrency}

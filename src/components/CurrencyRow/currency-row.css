@@ -8,3 +8,8 @@
 select {
     margin-left: .5rem;
 }
+
+.bootstrap-input {
+    width: 130px;
+    margin: 0;
+}
