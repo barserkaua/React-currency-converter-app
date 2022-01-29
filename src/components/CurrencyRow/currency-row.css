@@ -13,3 +13,9 @@ select {
     width: 130px;
     margin: 0;
 }
+
+
+.list-group-item {
+    display: flex;
+}
+

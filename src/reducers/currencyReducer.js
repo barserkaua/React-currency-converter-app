@@ -8,7 +8,7 @@ import {
     CURRENT_EXCHANGER_FAIL,
 } from '../constants/currencyConstants';
 
-// this function create to register our users
+
 export const currencyListReducer = (state = { currency: {}}, action) => {
     switch (action.type) {
         case CURRENCY_LIST_REQUEST:

@@ -1,14 +1,25 @@
 .convert__screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 80vh;
-    text-align: center;
+
+    &__currency {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
     &__text {
         margin: 0;
         margin-bottom: 1rem;
+    }
+
+    &__news {
+
+        &__promo {
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
     }
 }
 
