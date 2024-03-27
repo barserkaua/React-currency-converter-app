@@ -16,7 +16,7 @@ export default function CurrentExchangeScreen() {
 
     useEffect(() => {
         if (success) {
-            setCurrencyOptions([...Object.entries(currency.rates)])
+            setCurrencyOptions([...Object.entries(currency.data)])
         }
     },[currency])
 

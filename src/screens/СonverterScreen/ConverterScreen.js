@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import './convert-screen.scss';
 import {currencyList} from "../../actions/currencyAction";
 
-export const BASE_URL = 'https://api.exchangerate.host/latest';
+export const BASE_URL = 'https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_o9xksnx6fWzx5XWIjMIyJlEvedlXiqwHSJBwS400';
 
 const CurrencyRow = React.lazy(() => import('../../components/CurrencyRow/CurrencyRow'));
 const PopularNews = React.lazy(() => import('../../components/PopularNews/PopularNews'))

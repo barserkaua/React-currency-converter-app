@@ -24,7 +24,7 @@ export const currencyList = (url) => async (dispatch) => {
             url,
             config
         )
-
+        
         dispatch({
             type: CURRENCY_LIST_SUCCESS,
             payload: data

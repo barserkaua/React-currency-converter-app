@@ -61,13 +61,9 @@ export default function CurrencyTable(props) {
                                 <tr>
                                     <td>{currentExchanger}</td>
                                     <td>1</td>
-                                    {currencyOptions.map(currentCurrency => {
-                                        if (currentCurrency[0] === currentExchanger) {
-                                            return (
-                                                <td key={currentCurrency}>{(option[1]/currentCurrency[1]).toFixed(4)}</td>
-                                            )
-                                        }
-                                    })}
+                                    {currencyOptions.map(currentCurrency => (
+                                        currentCurrency[0] === currentExchanger &&  <td key={currentCurrency}>{(option[1]/currentCurrency[1]).toFixed(4)}</td>
+                                    ))}
                                     <td >{option[0]}</td>
                                 </tr>
                             </tbody>
